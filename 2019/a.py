@@ -19,4 +19,4 @@ def calc_uber_price(type_chosed, min, km):
 
   return total_price
 type_chosed, min, km = map(int ,input().split())
-print(calc_uber_price(type_chosed, min, km))
+print(f"Price: {calc_uber_price(type_chosed, min, km)}")
