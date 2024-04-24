@@ -15,7 +15,7 @@ def calc_locked_drawers(drawers):
             previous_drawer = drawers[i - 1]
         else:
             previous_drawer = ""
-        if previous_drawer == "#" or drawer == "#":
+        if previous_drawer == "#" and drawer != "o" or drawer == "#":
             locked_drawers += 1
     return locked_drawers
 
